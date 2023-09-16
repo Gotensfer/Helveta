@@ -75,6 +75,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Añadir esto al .gitignore en la carpeta de unity
 # F M O D
 # Never ignore DLLs in the FMOD subfolder.
 !/[Aa]ssets/Plugins/FMOD/libs/*
@@ -89,7 +90,15 @@ crashlytics-build.properties
 # Ignore bank files in the StreamingAssets folder.
 /[Aa]ssets/StreamingAssets/**/*.bank
 /[Aa]ssets/StreamingAssets/**/*.bank.meta
-# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
 
+# FMOD files
+!FMOD/
+!FMOD/Editor/
+!FMOD/Editor/**
+!FMOD/Wrapper/
+!FMOD/Wrapper/**
+
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
 # Log files can be ignored.
 fmod_editor.log
